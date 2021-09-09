@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+        }
+
+        code {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .contenido-padre {
+            display: flex;
+            flex-direction:row;
+        }
+
+        .contenidohijo {
+            flex: 1 1 1%;
+            border: .2px solid rgb(90, 12, 255);
+            text-align: left;
+            padding: 10px;
+            background: rgb(145,255,173);
+            background: radial-gradient(circle, rgba(145,255,173,1) 0%, rgba(148,187,233,1) 100%);
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 15%;
+            background: #57f5f51a;
+            font-size: 90%;
+            border-radius: 10px;
+        }
+
+        .contenidohijo aside nav {
+            position: absolute;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .contenidohijo aside nav ul{
+            list-style: none;
+        }
+
+        .contenidohijo aside nav ul li{
+            position: relative;
+        }
+
+        .contenidohijo aside nav ul li a{
+            line-height: 400%;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgba(#FFF, 0.35);
+            display: block;
+        }
+
+        #menuizquierdo {
+            background: rgb(121,169,255);
+            background: linear-gradient(21deg, rgba(121,169,255,1) 0%, rgba(108,255,1,1) 50%, rgba(252,176,69,1) 100%);
+            max-width: 20%;
+        }
+
+        #main-doc {
+            text-align: justify;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        @media screen and (max-width: 779px) {
+            body {
+                background-color: rgb(255, 193, 173);
+                font-size: 50%;
+            }
+
+            #menuizquierdo {
+                max-width: 35%;
+
+            }
+
+            code{
+                background-color: transparent;
+            }
+        }
+    </style>
+    <title>Documentacion</title>
+</head>
+<body>
+    <div class="contenido-padre">
+        <div class="contenidohijo" id="menuizquierdo">
+            <aside class="sidebar">
+                <nav class="navbar" id="navbar">
+                    <ul>
+                        <li><a>Documentacion C++</a></li>
+                        <li><a href="#introduccion">Introduccion</a></li>
+                        <li><a href="#que_deberias_saber">¿Que deberias saber?</a></li>
+                        <li><a href="#variables_de_lenguaje">Variables</a></li>
+                        <li><a href="#hola_mundo">Hola Mundo</a></li>
+                        <li><a href="#references">Referencias</a></li>
+                      </ul>
+                </nav>
+            </aside>
+        </div>
+        <div class="contenidohijo">
+            <main id="main-doc">
+                <!-- seccion 01 -->
+                <section class="main-section" id="introduccion">
+                    <div name="div-header-section" id="introduccion">
+                        <header id="introduccion">
+                            <h1>Introduccion</h1>
+                        </header>
+                    </div>
+                    <div id="contenido_doc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque voluptate alias optio eum fugit accusamus id dolorum quis iusto placeat consequatur similique obcaecati, inventore sed porro omnis reprehenderit laboriosam?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </section>
+                <!-- seccion 02 -->
+                <section class="main-section" id="que_deberias_saber">
+                    <div name="div-header-section" id="que_deberias_saber">
+                        <header iid="que_deberias_saber">
+                            <h1>¿Que deberias saber?</h1>
+                        </header>
+                    </div>
+                    <div id="contenido_doc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque voluptate alias optio eum fugit accusamus id dolorum quis iusto placeat consequatur similique obcaecati, inventore sed porro omnis reprehenderit laboriosam?
+                            <ol>
+                                <li>
+                                    Logica de Programacion
+                                </li>
+                                <li>
+                                    Abstraccion de Datos
+                                </li>
+                                <li>
+                                    Buena tecnica de estudio
+                                </li>
+                                <li>
+                                    Ganas de aprender
+                                </li>
+                                <li>
+                                    Organizacion de tu tiempo libre
+                                </li>
+                            </ol>
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde odio, illo similique suscipit non consequuntur, doloremque quis autem saepe eos qui, deserunt maiores earum explicabo libero ipsa aliquam delectus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ratione veritatis, iusto labore cum blanditiis inventore voluptas nesciunt deserunt dolore consectetur vero nostrum commodi laudantium ad eveniet quasi, perferendis minus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos similique mollitia quaerat amet quia vitae placeat laudantium incidunt odio tenetur, dolor quisquam aut. Est consequatur amet, nesciunt cupiditate voluptas voluptatum.
+                        </p>
+                    </div>
+                </section>
+                <!-- seccion 03 -->
+                <section class="main-section" id="variables_de_lenguaje">
+                    <div name="div-header-section" id="variables_de_lenguaje">
+                        <header id="variables_de_lenguaje">
+                            <h1>Variables del Lenguaje</h1>
+                        </header>
+                    </div>
+                    <div id="contenido_doc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p>
+                            Entero: <br>
+                            <code>
+                                int a=1, b=2, c=3;
+                            </code>
+                        </p>
+                        <p>
+                            Flotante: <br>
+                            <code>
+                                float a=1.1, b=2.2, c=3.3;
+                            </code>
+                        </p>
+                        <p>
+                            Char (caracter): <br>
+                            <code>
+                                char diego='D', carlos='C', Abraham='A';
+                            </code>
+                        </p>
+                        <p>
+                            Booleano (Bool): <br>
+                            <code>
+                                bool bandera=true, paso=false;
+                            </code>
+                        </p>
+                    </div>
+                </section>
+                <!-- seccion 04 -->
+                <section class="main-section" id="hola_mundo">
+                    <div name="div-header-section" id="hola_mundo">
+                        <header id="hola_mundo">
+                            <h1>Hola Mundo</h1>
+                        </header>
+                    </div>
+                    <div id="contenido_doc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque voluptate alias optio eum fugit accusamus id dolorum quis iusto placeat consequatur similique obcaecati, inventore sed porro omnis reprehenderit laboriosam?
+                        </p>
+                        <p>
+                            Codificacion de hola mundo en C++: <br>
+                            <code>
+                                #include &lt iostream &gt ; <br>
+                                using namespace std; <br>
+                                int main(){<br>
+                                    cout<<"Hola Mundo";
+                                <br>}
+                            </code>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum tempora ipsam consequatur expedita dolorem sunt nihil beatae eveniet eius tempore, inventore, reiciendis in. Nam id consequatur impedit facilis recusandae cum.
+                        </p>
+                    </div>
+                </section>
+                <!-- seccion 05 -->
+                <section class="main-section" id="references">
+                    <div name="dev-header-section" id="references">
+                        <header id="references">
+                            <h1>Referencias</h1>
+                        </header>
+                    </div>
+                    <div id="contenido_doc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque voluptate alias optio eum fugit accusamus id dolorum quis iusto placeat consequatur similique obcaecati, inventore sed porro omnis reprehenderit laboriosam?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet impedit ea dicta laborum suscipit porro culpa voluptas nisi iure est atque aut, quaerat eos placeat debitis ab! Sed, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam pariatur repellendus voluptates in natus provident? Sapiente sequi minima aliquam architecto voluptate autem. Minima et libero quidem similique sequi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p>
+                            Y para más informacion puedes consultar <a href="https://programacion.top/c-plus-plus/">Programacion desde cero con C++</a>
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
